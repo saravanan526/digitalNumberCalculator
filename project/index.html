@@ -80,11 +80,17 @@ function binarycheck(n){
 }
 
 function Hexadecimalcheck(n){
-    let t=n;
+  let t=n;
+    t.toUpperCase();
     for(let i=0;i<t.length;i++){
-        if(t[i]<'0' || t[i]>'9' || t[i]<'A' || t[i]>'F'){
+        if(t[i]>='0' || t[i]<='9'){
+            continue;
+        }
+        else if(t[i]>='A' || t[i]<='F'){
+             continue;
+        }
+        else{
             return false;
-            break;
         }
     }
     return true;
@@ -344,5 +350,6 @@ btn.addEventListener('click',(event)=>{
 })
 
 </script>
+
 
 </html>

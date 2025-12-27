@@ -83,10 +83,10 @@ function Hexadecimalcheck(n){
   let t=n;
     t.toUpperCase();
     for(let i=0;i<t.length;i++){
-        if(t[i]>='0' || t[i]<='9'){
+        if(t[i]>='0' && t[i]<='9'){
             continue;
         }
-        else if(t[i]>='A' || t[i]<='F'){
+        else if(t[i]>='A' && t[i]<='F'){
              continue;
         }
         else{
@@ -353,3 +353,4 @@ btn.addEventListener('click',(event)=>{
 
 
 </html>
+
